@@ -61,6 +61,7 @@ var sommaPeso = 0;
 console.log(leMieZucchine);
 
 
+
 for (var i = 0; i < leMieZucchine.length; i++) {
     var zucchinaDellArray = leMieZucchine[i];
     sommaPeso += zucchinaDellArray.peso
