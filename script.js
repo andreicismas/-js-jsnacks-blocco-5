@@ -69,3 +69,27 @@ for (var i = 0; i < leMieZucchine.length; i++) {
 
 console.log(sommaPeso)
 
+// Crea 10 oggetti che rappresentano una zucchina.
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm.
+// Infine stampa separatamente quanto pesano i due gruppi di zucchine. 
+var zucchinePiccole = []
+var zucchineGrandi = []
+var sommaPesiZucchinePiccole = 0
+var sommaPesiZucchineGrandi = 0
+
+for (var i = 0; i < leMieZucchine.length; i++) {
+    var zucchinaDellArray = leMieZucchine[i];
+    if (zucchinaDellArray.lunghezza < 15) {
+        zucchinePiccole.push(zucchinaDellArray)
+        sommaPesiZucchinePiccole += zucchinaDellArray.peso
+    } else {
+        zucchineGrandi.push(zucchinaDellArray)
+        sommaPesiZucchineGrandi += zucchinaDellArray.peso
+    }
+}
+console.log(zucchinePiccole)
+console.log(zucchineGrandi)
+console.log(sommaPesiZucchinePiccole)
+console.log(sommaPesiZucchineGrandi)
+
+
